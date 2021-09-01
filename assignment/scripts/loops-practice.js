@@ -25,21 +25,23 @@ console.log('count from 3 to 5');
 for(i=3; i<=5; i++){
   console.log(i);
 }
-      //you can either change the intial value of i or do an AND condition i>=3 && i<=5
+      //change the intial value of i
 
 
 // 1.c. TODO: Write a for loop to console.log EVEN numbers from 2 to 10
 //   - Which part of the example loop do you need to change to do this?
 console.log('count even numbers from 2 to 10 (2, 4, 6, 8, 10):');
-for(i=1; (i%2 == 0 && i<=10); i++){
-  console.log(i);
+for(i=1; i <= 10; i++){
+  if(i % 2 == 0){
+    console.log(i);
+  }
 }
-      //changed the intial value and the condition
+      //changed the intial value and the condition. nested an if statement inside
 
 
 // 1.d. (STRETCH) TODO: Write a for loop to do a counddown from 5 to 0
 console.log('STRETCH: countdown from 5 to 0');
-for(i=5; i=0; i--){
+for(i=5; i>=0; i--){
   console.log(i);
 }
 
